@@ -7,7 +7,7 @@ This repo is only for my personal use. I want to understand how Kubernetes works
 
 ## Where I have stopped
 
-I have stopped at the [Launching the VM Cluster](https://github.com/ghik/kubernetes-the-harder-way/blob/main/docs/03_Launching_the_VM_Cluster.md#launching-the-vm-cluster) section.
+I have stopped at the [Bootstrapping Kubernetes Security](https://github.com/ghik/kubernetes-the-harder-way/blob/main/docs/04_Bootstrapping_Kubernetes_Security.md#bootstrapping-kubernetes-security) section.
 
 ## Utils
 
@@ -21,7 +21,9 @@ An abstract numeric ID is assigned to VMs. This ID will come in handy in scripts
 
 - Setup the vm
    ```bash
-    ./vmsetup.sh $vmid
+    for vmid in $(seq 0 6); do
+      ./vmsetup.sh $vmid
+    done
     ```
 - Setup vm SSH
    ```bash
@@ -41,9 +43,18 @@ An abstract numeric ID is assigned to VMs. This ID will come in handy in scripts
     -drive file=gateway/cidata.iso,driver=raw,if=virtio
   ```
 
+### Launch VMs
+
+- `sudo ./vmlaunchall.sh kubenet-qemu`
+- `sudo tmux attach -t kubenet-qemu`
+
 ### QEMU utils
 
 - `Ctrl`+`Opt`+`2` => Switch to serial port
 - `Ctrl`+`Opt`+`3` => Switch to parallel port
 - `Ctrl`+`Opt`+`2` => Switch to monitor console
 - `Ctrl`+`Opt`+`G` => release mouse
+
+### `tmux`
+
+- https://tmuxcheatsheet.com/
