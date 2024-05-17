@@ -1,0 +1,11 @@
+192.168.1.1   vmhost
+192.168.1.10  gateway
+192.168.1.11  control0
+192.168.1.12  control1
+192.168.1.13  control2
+192.168.1.14  worker0
+192.168.1.15  worker1
+192.168.1.16  worker2
+
+# a virtual IP that will serve the Kubernetes API via the load balancer VM (gateway)
+192.168.1.21  kubernetes

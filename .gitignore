@@ -1,0 +1,15 @@
+gateway*/
+control*/
+worker*/
+auth/*.csr
+auth/*.pem
+auth/*.kubeconfig
+auth/encryption-config.yaml
+nfs-pvs/
+.idea/
+bin/
+*.img
+*.iso
+*.swp
+*~
+jammy-server-cloudimg-arm64.img

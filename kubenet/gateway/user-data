@@ -1,0 +1,9 @@
+#cloud-config
+password: ubuntu
+ssh_authorized_keys:
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEEfbyhlbkf774PLOC9zA7Pe01lvHU6NiOfGzlgsYFWa brahim.boukoufallah@FVFFQ1F4Q05P
+packages:
+  - curl
+package_update: true
+package_upgrade: true
+package_reboot_if_required: false
