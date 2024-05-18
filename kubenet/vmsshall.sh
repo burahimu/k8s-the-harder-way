@@ -22,7 +22,7 @@ done
 vm_ssh() {
   local vmid=$1
   local vmname=$(id_to_name "$vmid")
-  tmux send-keys -t "$sname" "ssh ubuntu@$vmname" C-m
+  tmux send-keys -t "$sname" "ssh -i ~/.ssh/id_ed25519_kube ubuntu@$vmname" C-m
 }
 
 # Launch a new session with initial window named "ssh-gateway"

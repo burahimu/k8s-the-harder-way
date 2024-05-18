@@ -47,6 +47,8 @@ An abstract numeric ID is assigned to VMs. This ID will come in handy in scripts
 
 - `sudo ./vmlaunchall.sh kubenet-qemu`
 - `sudo tmux attach -t kubenet-qemu`
+- `sudo tmux kill-session -t kubenet-qemu`
+- `./vmsshall.sh kubenet-ssh`
 
 ### QEMU utils
 

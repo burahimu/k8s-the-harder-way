@@ -22,4 +22,4 @@ fi
 ssh-keyscan "$vmname" 2> /dev/null >> ~/.ssh/known_hosts
 
 # Wait until the system boots up and starts accepting unprivileged SSH connections
-until ssh "ubuntu@$vmname" exit; do sleep 1; done
+until ssh -i ~/.ssh/id_ed25519_kube "ubuntu@$vmname" exit; do sleep 1; done
