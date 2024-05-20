@@ -7,7 +7,7 @@ This repo is only for my personal use. I want to understand how Kubernetes works
 
 ## Where I have stopped
 
-I have stopped at the [Bootstrapping Kubernetes Security](https://github.com/ghik/kubernetes-the-harder-way/blob/main/docs/04_Bootstrapping_Kubernetes_Security.md#bootstrapping-kubernetes-security) section.
+I have stopped at the [Installing Kubernetes Control Plane](https://github.com/ghik/kubernetes-the-harder-way/blob/main/docs/05_Installing_Kubernetes_Control_Plane.md#installing-kubernetes-control-plane) section.
 
 ## Utils
 
