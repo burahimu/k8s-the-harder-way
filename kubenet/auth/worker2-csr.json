@@ -1,0 +1,21 @@
+{
+  "CN": "system:node:worker2",
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "FR",
+      "L": "Villeurbanne",
+      "O": "system:nodes",
+      "OU": "kubenet",
+      "ST": "Rhône-Alpes France"
+    }
+  ],
+  "hosts": [
+    "worker2",
+    "worker2.kubenet",
+    "192.168.1.16"
+  ]
+}

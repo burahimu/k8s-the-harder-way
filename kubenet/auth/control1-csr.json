@@ -1,0 +1,21 @@
+{
+  "CN": "system:node:control1",
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "FR",
+      "L": "Villeurbanne",
+      "O": "system:nodes",
+      "OU": "kubenet",
+      "ST": "Rhône-Alpes France"
+    }
+  ],
+  "hosts": [
+    "control1",
+    "control1.kubenet",
+    "192.168.1.12"
+  ]
+}

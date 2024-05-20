@@ -60,3 +60,19 @@ An abstract numeric ID is assigned to VMs. This ID will come in handy in scripts
 ### `tmux`
 
 - https://tmuxcheatsheet.com/
+
+### Certificates
+
+> [!NOTE]
+> Run those commands in the `auth` directory
+
+- Generate a CA cert: `cfssl gencert -initca ca-csr.json | cfssljson -bare ca`
+- Generate and sign k8s certs:
+  ```bash
+  cfssl gencert \
+  -ca=ca.pem \
+  -ca-key=ca-key.pem \
+  -config=ca-config.json \
+  -profile=kubernetes \
+  kubernetes-csr.json | cfssljson -bare kubernetes
+  ```

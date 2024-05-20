@@ -1,9 +1,9 @@
 gateway*/
 control*/
 worker*/
-auth/*.csr
-auth/*.pem
-auth/*.kubeconfig
+kubenet/auth/*.csr
+kubenet/auth/*.pem
+kubenet/auth/*.kubeconfig
 auth/encryption-config.yaml
 nfs-pvs/
 .idea/
