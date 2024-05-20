@@ -66,13 +66,7 @@ An abstract numeric ID is assigned to VMs. This ID will come in handy in scripts
 > [!NOTE]
 > Run those commands in the `auth` directory
 
-- Generate a CA cert: `cfssl gencert -initca ca-csr.json | cfssljson -bare ca`
-- Generate and sign k8s certs:
-  ```bash
-  cfssl gencert \
-  -ca=ca.pem \
-  -ca-key=ca-key.pem \
-  -config=ca-config.json \
-  -profile=kubernetes \
-  kubernetes-csr.json | cfssljson -bare kubernetes
-  ```
+- Generating certs & kubeconfigs: `./genauth.sh`
+- Generating cluster data encryption key: `./genenckey.sh`
+- Distributing certificates and keys: `./deployauth.sh`
+- Setting up local `kubeconfig`: `./setuplocalkubeconfig.sh`
